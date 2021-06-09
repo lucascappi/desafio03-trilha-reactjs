@@ -27,6 +27,32 @@ export const Container = styled.div`
       }
     }
   }
+
+  div.empty-cart{
+    text-align: center;
+
+    p {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #333;
+      margin: 2rem 0;
+    }
+
+    button {
+      background: #7159c1;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.2s;
+
+      &:hover {
+        background: ${darken(0.06, '#7159c1')};
+      }
+    }
+  }
 `;
 
 export const ProductTable = styled.table`
